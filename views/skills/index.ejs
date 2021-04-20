@@ -12,11 +12,10 @@
                 <a href="/skills/<%= s.id %>">
                     <%= s.skill %>
                 </a>
-                -
-                <%= s.done ? 'done' : 'not done' %>
             </li>
             <% }); %>
     </ul>
-    <a href="/skills/new">Add Skill</a>
-</body>
+    <form action="/skills/new" method="GET" autocomplete="off" class="standard-button">
+      <button>Add Skill</button>
+  </form></body>
 </html>

@@ -15,8 +15,13 @@
     <h3>
         <%= skill.skill %>
     </h3>
-    <h3>Complete: <%= skill.done ? 'Yes' : 'No' %>
-    </h3>
+    <form action="/skills/<%= skill.id %>?_method=DELETE" class="delete-form" method="POST">
+        <button type="submit">Delete Skill</button>
+    </form>
+    <br>
+    <form action="/skills" method="GET" autocomplete="off" class="standard-button">
+        <button>Home</button>
+    </form>
 </body>
 
 </html>
