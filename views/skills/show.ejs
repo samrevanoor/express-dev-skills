@@ -15,6 +15,9 @@
     <h3>
         <%= skill.skill %>
     </h3>
+    <form action="/skills/<%= skill.id %>/edit" class="standard-button" method="GET">
+        <button type="submit">Edit Skill</button>
+    </form>
     <form action="/skills/<%= skill.id %>?_method=DELETE" class="delete-form" method="POST">
         <button type="submit">Delete Skill</button>
     </form>

@@ -15,7 +15,7 @@ function getOne(id) {
     return skills.find(skill => skill.id === parseInt(id));
 }
 
-function deleteOne(id){
+function deleteOne(id) {
     const idx = skills.findIndex(skill => skill.id === parseInt(id));
     skills.splice(idx, 1);
 }
@@ -23,11 +23,17 @@ function deleteOne(id){
 function create(skill) {
     skills.push(skill);
     skill.id = skills.length;
-  }
+}
+
+function updateSkill(value, id) {
+    const idx = skills.findIndex(s => s.id === parseInt(id));
+    skills[idx].skill = value.skill;
+}
 
 module.exports = {
     getAll,
     getOne,
     create,
-    deleteOne
+    deleteOne,
+    update: updateSkill
 };

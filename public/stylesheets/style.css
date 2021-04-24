@@ -50,3 +50,23 @@ a {
 .standard-button button:hover {
   background-color: rgb(243, 204, 98);
 }
+
+.edit-skill input {
+  padding: 15px;
+  margin-right: 10px;
+  border: 2px solid rgb(243, 185, 26);
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.edit-skill button {
+  padding: 5px 15px 5px 15px;
+  background-color: rgb(243, 185, 26);
+  border-radius: 20px;
+}
+
+.edit-skill button:hover {
+  background-color: green;
+  color: white;
+}
